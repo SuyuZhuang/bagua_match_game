@@ -15,3 +15,6 @@ npm install
 npx vite build
 npm run dev
 ```
+
+本地启动
+http://localhost:5173/
