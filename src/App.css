@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #c41c1c;
+  --primary-dark: #8a0000;
+  --gold: #d4af37;
+  --gold-light: #f9e076;
+  --jade: #00a86b;
+  --jade-dark: #007046;
+  --paper: #f5e8c0;
+  --ink: #2b1600;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif SC', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ma Shan Zheng', cursive;
+  letter-spacing: 0.05em;
+}
+
+.bg-pattern {
+  background-image: url('https://images.pexels.com/photos/6631367/pexels-photo-6631367.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.2) saturate(0.8);
+}
+
+.chinese-border {
+  border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"><path d="M0 0h40v40H0z"/><path d="M0 0h5v5H0zm35 0h5v5h-5zM0 35h5v5H0zm35 35h5v5h-5zM5 5h30v30H5z" fill="%23d4af37"/></svg>') 25% repeat;
+  border-width: 25px;
+  border-style: solid;
+}
+
+.trigram {
+  font-size: 5rem;
+  line-height: 1;
+  transition: transform 0.3s ease-out;
+}
+
+.trigram:hover {
+  transform: scale(1.05);
+}
+
+.option {
+  background-color: rgba(212, 175, 55, 0.1);
+  border: 2px solid var(--gold);
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  background-color: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+.option.correct {
+  background-color: rgba(0, 168, 107, 0.2);
+  border-color: var(--jade);
+}
+
+.option.incorrect {
+  background-color: rgba(196, 28, 28, 0.2);
+  border-color: var(--primary);
+}
+
+.timer-bar {
+  height: 8px;
+  transition: width 0.05s linear, background-color 0.5s ease;
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.sparkle {
+  animation: sparkle 0.8s ease-in-out;
+}
+
+.flash {
+  animation: flash 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.btn {
+  background-color: var(--gold);
+  color: var(--ink);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border: 2px solid var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
