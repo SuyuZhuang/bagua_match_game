@@ -112,7 +112,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ onGameOver }) => {
         </div>
         
         <div className="question text-xl mb-2 text-center">
-          What is this trigram?
+          这是哪一卦？
         </div>
       </div>
       
