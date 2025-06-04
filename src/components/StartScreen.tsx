@@ -13,13 +13,14 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
       <div className="mb-8 flex justify-center">
         <div className="grid grid-cols-4 gap-2">
           <span className="text-4xl">☰乾</span>
-          <span className="text-4xl">☷坤</span>
-          <span className="text-4xl">☳震</span>
-          <span className="text-4xl">☶艮</span>
-          <span className="text-4xl">☲离</span>
-          <span className="text-4xl">☵坎</span>
           <span className="text-4xl">☱兑</span>
+          <span className="text-4xl">☲离</span>
+          <span className="text-4xl">☳震</span>
+
           <span className="text-4xl">☴巽</span>
+          <span className="text-4xl">☵坎</span>
+          <span className="text-4xl">☶艮</span>
+          <span className="text-4xl">☷坤</span>
         </div>
       </div>
       
