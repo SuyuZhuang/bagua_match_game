@@ -26,7 +26,6 @@ h1, h2, h3, h4 {
 }
 
 .bg-pattern {
-  background-image: url('https://images.pexels.com/photos/6631367/pexels-photo-6631367.jpeg');
   background-size: cover;
   background-position: center;
   filter: contrast(1.2) saturate(0.8);
